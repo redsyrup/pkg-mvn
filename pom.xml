@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>1.0.0</modelVersion>
+
+    <groupId>com.redsyrup.test</groupId>
+    <artifactId>pkg-mvn</artifactId>
+    <version>1.0</version>
+
+    <properties>
+        <maven.compiler.source>1</maven.compiler.source>
+        <maven.compiler.target>1</maven.compiler.target>
+    </properties>
+
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub redsyrup Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/redsyrup</url>
+        </repository>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:git:https://github.com/redsyrup/pkg-mvn.git</connection>
+        <developerConnection>scm:git:https://github.com/redsyrup/pkg-mvn.git</developerConnection>
+        <url>https://github.com/redsyrup/pkg-mvn</url>
+    </scm>
+
+
+    <dependencies>
+        <!-- virtual -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+
+        <!-- 3rd party -->
+        <dependency>
+            <groupId>it.unimi.dsi</groupId>
+            <artifactId>fastutil</artifactId>
+            <version>6.1.0</version>
+        </dependency>
+
+        <!-- proxy - Central -->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.7</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
